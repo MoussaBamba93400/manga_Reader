@@ -1,0 +1,63 @@
+.strow {
+    background-color: red;
+    height: 3px;
+    width: 100px;
+    transform: rotate(-50deg);
+    position: relative;
+    top: 52px;
+    left: 32%;
+    z-index: -1;
+}
+
+
+#scan-title {
+    margin-left: 33%;
+    background: white;
+    padding-bottom: 3px;
+    padding-top: 0;
+}
+
+
+.anime-list {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.anime-item {
+    border-radius: 10px;
+    height: 400px;
+    border: 1px solid black;
+    margin-top: 10px;
+    width: 20%;
+    margin-bottom: 20px;
+    box-shadow: 1.5px 2px 3px black;
+}
+
+.anime-item:hover {
+    transform: scale(1.02);
+}
+
+
+/* Responsive part */
+
+@media only screen and (max-width: 700px) {
+    
+    #scan-title {
+        margin-left: 20%;
+    }
+
+    .anime-item {
+        height: 320px;
+    }
+}
+
+
+@media only screen and (max-width: 1090px) {
+    
+    .anime-item {
+        width: 180px;
+    }
+}
